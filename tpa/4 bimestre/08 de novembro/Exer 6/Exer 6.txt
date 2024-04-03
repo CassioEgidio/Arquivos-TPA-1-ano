@@ -1,0 +1,20 @@
+Ficha de desenvolvimento exercicio 6
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     varialvel tipo real com o nome "pesoprato", serve para o usuario entrar com o peso do prato.
+	 variavel tipo real com o nome "bebida", serve para o usuario entrar com o valor de quanto ele gastou com as bebidas
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     As mesmas que as de entrada.
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     variavel tipo real com o nome de "vaconta"
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeiro o usuario vai colocar o peso do prato, e em seguida vai colocar o quando gastou com a bebida, depois vai ter uma condição que vai verificar se o valor da bebida E o peso do prato é igual a zero, se for aparecerá na tela que o programa foi encerrado, se não sera feita a conta e aparecerá o resultado de quando ele gastou.
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Nao possui
+	 
+6) e o que apresentar como resultado final.
+     Se a condição for falsa aparecerá o valor da variavel "vaconta"

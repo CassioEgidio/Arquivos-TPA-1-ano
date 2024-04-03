@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 02:31:09 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjg7IjAyOjM2OjM3ICI7MjE3Ng=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDY7IjA4OjU1OjU1ICI7MjA7MjMzNw=="/>
+        <attribute name="edited" value="QWRtaW47TEFCLTAxLTExOzIwMjMtMTItMDY7IjAyOjMxOjA5ICI7Mjc7MjMzMQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qa, i, c" type="Integer" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <assign variable="media" expression="0"/>
+            <assign variable="qa" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="c" expression="0"/>
+            <output expression="&quot;Quantos alunos existem na turma?&quot;" newline="True"/>
+            <input variable="qa"/>
+            <declare name="notass" type="Real" array="True" size="qa + 2"/>
+            <while expression="i&lt;qa">
+                <while expression="c&lt;2">
+                    <output expression="&quot;Informe a &quot;&amp;c+1&amp; &quot; nota do &quot;&amp;i+1&amp;&quot; aluno&quot;" newline="True"/>
+                    <input variable="notass[i+c]"/>
+                    <assign variable="media" expression="(notass[i+c]+media)"/>
+                    <assign variable="c" expression="c+1"/>
+                </while>
+                <assign variable="media" expression="media/2"/>
+                <if expression="media&gt;6">
+                    <then>
+                        <output expression="&quot;A m&#233;dia do aluno &quot;&amp;i+1&amp;&quot; &#233;: &quot;&amp;media&amp; &quot; foi aprovado&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;A m&#233;dia do aluno &quot;&amp;i+1&amp;&quot; &#233;: &quot;&amp;media&amp; &quot; foi reprovado&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="c" expression="0"/>
+                <assign variable="i" expression="i+1"/>
+                <assign variable="media" expression="0"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

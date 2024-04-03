@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-27 07:59:47 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMTQ7IjA5OjAwOjA4ICI7MjE2Nw=="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMTY7MjAyMy0xMS0yMjsiMDI6NTE6MzUgIjsxMDsyNzgx"/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjc7IjA3OjU5OjQ3ICI7NzsyMzAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num20" type="Real" array="True" size="20"/>
+            <declare name="i, entre0100, entre101200, maior200" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="entre0100" expression="0"/>
+            <assign variable="entre101200" expression="0"/>
+            <assign variable="maior200" expression="0"/>
+            <while expression="i&lt;20">
+                <output expression="&quot;Entre com um numero&quot;" newline="True"/>
+                <input variable="num20[i]"/>
+                <if expression="num20[i]&gt;=200">
+                    <then>
+                        <assign variable="maior200" expression="maior200 + 1"/>
+                    </then>
+                    <else>
+                        <if expression="num20[i]&gt;=101">
+                            <then>
+                                <assign variable="entre101200" expression="entre101200 + 1"/>
+                            </then>
+                            <else>
+                                <if expression="num20[i]&gt;0">
+                                    <then>
+                                        <assign variable="entre0100" expression="entre0100 + 1"/>
+                                    </then>
+                                    <else/>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot; os numeros entre o e 100 foram &quot; &amp;entre0100" newline="True"/>
+            <output expression="&quot; os numeros entre 101 e 200 foram &quot; &amp;entre101200" newline="True"/>
+            <output expression="&quot; os numeros maiores que 200 foram &quot; &amp;maior200" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-29 07:32:07 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMDMtMjk7IjA3OjE5OjM2ICI7MjE4Mw=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMDMtMjk7IjA3OjMyOjA3ICI7MTsyMjg0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sf, pa, va, ns" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o seu salario atual&quot;" newline="True"/>
+            <input variable="sf"/>
+            <output expression="&quot;Digite o percentual de aumento&quot;" newline="True"/>
+            <input variable="pa"/>
+            <assign variable="va" expression="sf*pa/100"/>
+            <assign variable="ns" expression="va+sf"/>
+            <output expression="&quot;O valor de aumento do seu salario foi de &quot;&amp;va" newline="True"/>
+            <output expression="&quot; O seu novo salario &#233; de &quot;&amp;ns" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gusta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 10:50:58 "/>
+        <attribute name="created" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjI4OjE5ICI7Mjc2NQ=="/>
+        <attribute name="edited" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjUwOjU4ICI7MTsyODcx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nome" type="String" array="False" size=""/>
+            <declare name="med, nota1, nota2" type="Real" array="False" size=""/>
+            <output expression="&quot;digite o nome do aluno: &quot;" newline="True"/>
+            <input variable="nome"/>
+            <assign variable="nota1" expression="LerNota(nome)"/>
+            <assign variable="nota2" expression="LerNota(nome)"/>
+            <assign variable="med" expression="media(nota1,nota2)"/>
+            <if expression="med&gt;=7">
+                <then>
+                    <output expression="&quot;O aluno &quot;&amp;nome&amp;&quot; foi aprovado com a media de: &quot;&amp;med" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O aluno &quot;&amp;nome&amp;&quot; foi reprovado com a media de: &quot;&amp;med" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="LerNota" type="Real" variable="x">
+        <parameters>
+            <parameter name="nom" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="x" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite uma nota do aluno &quot;&amp;nom&amp;&quot;: &quot;" newline="True"/>
+            <input variable="x"/>
+        </body>
+    </function>
+    <function name="media" type="Real" variable="med">
+        <parameters>
+            <parameter name="no1" type="Real" array="False"/>
+            <parameter name="no2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="med" type="Real" array="False" size=""/>
+            <assign variable="med" expression="(no1+no2)/2"/>
+        </body>
+    </function>
+</flowgorithm>

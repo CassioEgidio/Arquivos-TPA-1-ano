@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-25 02:11:16 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMC0xODsiMDI6NDc6NTUgIjsyNjM4"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMC0yNTsiMDI6MTE6MTYgIjs4OzI3Mzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="base, altura, hs2" type="Real" array="False" size=""/>
+            <output expression="&quot;digite a base do tr&#226;ngulo&quot;" newline="True"/>
+            <input variable="base"/>
+            <output expression="&quot;digite a altura do tr&#226;ngulo&quot;" newline="True"/>
+            <input variable="altura"/>
+            <assign variable="hs2" expression="hipotenuza(base,altura)"/>
+            <output expression="&quot;o valor da hiotenuza &#233;: &quot; &amp;hs2" newline="True"/>
+        </body>
+    </function>
+    <function name="hipotenuza" type="Real" variable="hs">
+        <parameters>
+            <parameter name="bs" type="Real" array="False"/>
+            <parameter name="al" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="hs, hipo" type="Real" array="False" size=""/>
+            <assign variable="hipo" expression="(bs*bs)+(al*al)"/>
+            <assign variable="hs" expression="sqrt(hipo)"/>
+        </body>
+    </function>
+</flowgorithm>

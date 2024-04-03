@@ -1,0 +1,19 @@
+Ficha de desenvolvimento exercicio 10
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     real com o nome"br101", serve para armazenar a informação de quantos km o usuario percorreu.
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     real com o nome "kms", serve para fazer a conta de quantos km o usuario ja percorreu
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     será a "kms"
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeiro terá uma estrutura de repetição que funcionará ate o valor da variavel "kms" for menor que 4000, a primeira coisa que terá será a pergunta "Parou em uma cidade? quantos km você percorreu?" e a variavel "br101" será lida, e logo em seguida o valor da "br101" sera atribuida na "kms", e isso ficará repitindo ate a condição ser falsa. e aparecerá a mensagem "Parabens você percorreu "&kms&" km"
+
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Nao possui
+	 
+6) e o que apresentar como resultado final.
+     aparecerá a mensagem "Parabens você percorreu "&kms&" km"

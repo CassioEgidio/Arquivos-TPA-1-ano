@@ -1,0 +1,21 @@
+Ficha de desenvolvimento exercicio 9
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     Inteiro com o nome "fon", serve para saber se voce quer uma mesa de fumante ou não.
+	 Inteiro com o nome "qm", serve para saber quantas mesas você quer reservar.
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     Inteiro com o nome "mf", serve para fazer a subtração das mesas reservadas de fumantes e armazenar esse valor, ela ja comecaria com 25 de valor.
+     Inteiro com o nome "mn", serve para fazer a subtração das mesas reservadas de não fumantes e armazenar esse valor, ela ja comecaria com 25 de valor..
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     As mesmas variaveis de processamento.
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     A primeira coisa que teria no codigo seria uma estrutura de repeticão que ficaria rodando ate que todas as mesas fossem reservadas, dentro dessa estrutura de repetição a primeira coisa que teria seria a pergunta "Você quer uma mesa na area de fumantes ou na area de não fumantes? Digite 1 para a area de fumantes, e 2 para a area de não fumantes", depois teria um if que separaria se a resposta foi 1 ou 2, e dentro desse if teria outro if para verificar se a variavel "mn" ou "mf" é diferente de 0, se for igual a zero aparecerá a mensagem "Sem mesas de não fumantes" ou "Sem mesas de fumantes" e a primeira pergunta seria repitida. (eu fiz esse mecanismo com o objetivo de se as mesas por exemplo de fumantes ja tiverem acabado, e o usuario escolher as mesas de fumante o programa não fazer a subtração de 0 e serem apresentados numeros negativos, por que ainda existem mesas do tipo oposto que o usuario escolheu, por esse motivo a pergunta seria repitida). Se o valor for diferente de 0 apareceria a mensagem "Você      quer reservar quantas mesas nessa area selecionada?", depois dessa pergunta terá outro if que verificará se o valor escolhido de mesas foi maior que o de mesas existentes, se foi mair aparecerá uma mensagem explicando e voltara para o topo da estrutura de repetição, agora se for verdadeira o usuario digitará um valor e será feita uma subtração das variaveis das mesas. e aparecerá "A sua reserva esta feita, e existem "& mn & " mesas na area de não fumantes, e existem "& mf & " mesas na area de fumantes". e por fim as variaveis "fon" e "qm" serão zeradas. se não tiver mais mesas para reservar o programa sera encerrado.
+
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Nao possui
+	 
+6) e o que apresentar como resultado final.
+     a quantidade de mesas que ainda tem, e quando acabarem as mesas aparecerá "sem mesas programa finalizado"

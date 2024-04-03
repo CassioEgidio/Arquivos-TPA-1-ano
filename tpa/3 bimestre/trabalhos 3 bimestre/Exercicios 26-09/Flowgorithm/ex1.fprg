@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-25 01:50:06 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMC0yNTsiMDE6NDQ6NDAgIjsyNjI2"/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMC0yNTsiMDE6NTA6MDYgIjs2OzI3Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <call expression="digite()"/>
+            <input variable="a"/>
+            <call expression="dobro(a)"/>
+        </body>
+    </function>
+    <function name="digite" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Digite um n&#250;mero ::&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="dobro" type="None" variable="">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <assign variable="d" expression="n*2"/>
+            <output expression="&quot;Dobro de &quot;&amp;n&amp;&quot; &#233; &quot;&amp;d" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

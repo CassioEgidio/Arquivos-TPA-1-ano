@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 09:17:56 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDY7IjA4OjU2OjM3ICI7MjE4MQ=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDY7IjA5OjE3OjU2ICI7ODsyMjk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="br101, kms" type="Real" array="False" size=""/>
+            <assign variable="br101" expression="0"/>
+            <assign variable="kms" expression="0"/>
+            <while expression="kms&lt;4000">
+                <output expression="&quot;Parou em uma cidade? quantos km voc&#234; percorreu?&quot;" newline="True"/>
+                <input variable="br101"/>
+                <assign variable="kms" expression="kms+br101"/>
+            </while>
+            <output expression="&quot;Parabens voc&#234; percorreu &quot;&amp;kms&amp;&quot; km&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

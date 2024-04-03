@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-29 07:58:00 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAyOjA1OjU0ICI7MjE5OA=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAyOjM0OjA5ICI7MjsyMzA5"/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMDMtMjk7IjA3OjU4OjAwICI7MjsyMjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anp, ia, i2050, aa" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o seu ano de nascimento&quot;" newline="True"/>
+            <input variable="anp"/>
+            <output expression="&quot;Digite o ano atual&quot;" newline="True"/>
+            <input variable="aa"/>
+            <assign variable="ia" expression="aa-anp"/>
+            <assign variable="i2050" expression="2050-anp"/>
+            <output expression="&quot;Sua idade atual &#233;: &quot; &amp;ia" newline="True"/>
+            <output expression="&quot;Sua idade em 2050 &#233;: &quot; &amp;i2050" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

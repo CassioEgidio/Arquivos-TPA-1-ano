@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="FATEC ZONA LESTE"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-01 01:13:12 "/>
+        <attribute name="created" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMC0yNTsiMDE6NTk6NDUgIjsyNjM3"/>
+        <attribute name="edited" value="ZHRpO0xBQjIwMS0yMTsyMDIzLTEwLTMwOyIwNTozNDo0NyAiOzE7MjExNg=="/>
+        <attribute name="edited" value="SG9tZTtEQVZJREdBUkNJQTsyMDIzLTEwLTMxOyIwODowNzowMCAiOzQ7MjQ2OQ=="/>
+        <attribute name="edited" value="RkFURUMgWk9OQSBMRVNURTtUMDEtMDk7MjAyMy0xMS0wMTsiMDE6MTM6MTIgIjs5OzI3MzI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idade1, idade2" type="Integer" array="False" size=""/>
+            <declare name="nome1, nome2" type="String" array="False" size=""/>
+            <output expression="&quot;Digite o nome da 1&#176; pessoa ::&quot;" newline="True"/>
+            <input variable="nome1"/>
+            <output expression="&quot;Digite a idade da 1&#176; pessoa ::&quot;" newline="True"/>
+            <input variable="idade1"/>
+            <output expression="&quot;Digite o nome da 2&#176; pessoa ::&quot;" newline="True"/>
+            <input variable="nome2"/>
+            <output expression="&quot;Digite a idade da 2&#176; pessoa ::&quot;" newline="True"/>
+            <input variable="idade2"/>
+            <declare name="texto" type="String" array="False" size=""/>
+            <assign variable="texto" expression="PessoaMaisVelha(nome1,idade1,nome2,idade2)"/>
+            <output expression="&quot;&quot;&amp;texto" newline="True"/>
+        </body>
+    </function>
+    <function name="PessoaMaisVelha" type="String" variable="velho">
+        <parameters>
+            <parameter name="n1" type="String" array="False"/>
+            <parameter name="id1" type="Integer" array="False"/>
+            <parameter name="n2" type="String" array="False"/>
+            <parameter name="id2" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="velho" type="String" array="False" size=""/>
+            <if expression="id1&gt;id2">
+                <then>
+                    <assign variable="velho" expression="n1 &amp;&quot;&#233; a pessoa mais velha&quot;"/>
+                </then>
+                <else>
+                    <if expression="id2&gt;id1">
+                        <then>
+                            <assign variable="velho" expression="n2&amp;&quot;&#233; a pessoa mais veha&quot;"/>
+                        </then>
+                        <else>
+                            <assign variable="velho" expression="&quot;Os dois tem a mesma idade&quot;"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

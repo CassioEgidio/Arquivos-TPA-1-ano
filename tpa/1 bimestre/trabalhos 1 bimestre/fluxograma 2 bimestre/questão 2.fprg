@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-29 02:33:32 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAyOjI1OjUxICI7MjE5Nw=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAyOjMzOjMyICI7MTsyMzAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, n, resultado" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro numero&quot;" newline="True"/>
+            <input variable="x"/>
+            <output expression="&quot;Digite o segundo numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="resultado" expression="(x*n)^2"/>
+            <output expression="&quot;O seu resultado &#233;: &quot;&amp;resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

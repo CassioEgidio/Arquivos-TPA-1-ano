@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-02 06:37:10 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDI7IjA0OjM4OjMxICI7MjE2Nw=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDI7IjA2OjM3OjEwICI7MTM7MjMyNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qpro, i" type="Integer" array="False" size=""/>
+            <declare name="vf" type="Real" array="False" size=""/>
+            <assign variable="vf" expression="0"/>
+            <assign variable="qpro" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;Quantos produtos voc&#234; comprou?&quot;" newline="True"/>
+            <input variable="qpro"/>
+            <declare name="valor" type="Real" array="True" size="qpro"/>
+            <while expression="i&lt;qpro">
+                <output expression="&quot;Digite o valor do produto &quot;&amp;i+1" newline="True"/>
+                <input variable="valor[i]"/>
+                <assign variable="vf" expression="vf+valor[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;O valor gasto foi de &quot;&amp;vf &amp;&quot; Reais&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

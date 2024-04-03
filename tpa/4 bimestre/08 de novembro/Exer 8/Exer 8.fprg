@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-03 10:01:54 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDI7IjA2OjQ0OjU5ICI7MjE3Ng=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDM7IjEwOjAxOjU0ICI7MTc7MjMyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qa, i, c, g" type="Integer" array="False" size=""/>
+            <assign variable="qa" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <assign variable="c" expression="0"/>
+            <assign variable="g" expression="0"/>
+            <output expression="&quot;Quantos animais existem na loja?&quot;" newline="True"/>
+            <input variable="qa"/>
+            <declare name="tipoanimal" type="String" array="True" size="qa"/>
+            <while expression="i&lt;qa">
+                <output expression="&quot;Qual o tipo do &quot;&amp;i+1&amp; &quot; animal (Gato ou cachorro)&quot;" newline="True"/>
+                <input variable="tipoanimal[i]"/>
+                <if expression="tipoanimal[i]= &quot;gato&quot; || tipoanimal[i]=&quot;Gato&quot;">
+                    <then>
+                        <assign variable="g" expression="g+1"/>
+                        <assign variable="i" expression="i+1"/>
+                    </then>
+                    <else>
+                        <if expression="tipoanimal[i]=&quot;cachorro&quot; || tipoanimal[i]=&quot;Cachorro&quot;">
+                            <then>
+                                <assign variable="c" expression="c+1"/>
+                                <assign variable="i" expression="i+1"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;Animal n&#227;o identificado, escreva novamente&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;Existem &quot;&amp;g&amp;&quot; gatos e &quot;&amp;c &amp;&quot; cachorros&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

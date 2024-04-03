@@ -1,0 +1,6 @@
+
+- Execute o "flashplayer-32-sa
+- Irá abrir a tela do "Adobe Flash Player 32" (- para "execução dos arquivos movies")
+- Menu arquivo, opção Abrir, botão Procurar (encontre o jogo) Ok
+
+-- É só jogar.....

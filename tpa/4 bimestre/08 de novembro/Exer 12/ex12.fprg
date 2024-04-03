@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Home"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 01:52:46 "/>
+        <attribute name="created" value="SG9tZTtEQVZJREdBUkNJQTsyMDIzLTExLTI5OyIwNDo1OToyNyAiOzIzNzg="/>
+        <attribute name="edited" value="SG9tZTtEQVZJREdBUkNJQTsyMDIzLTExLTI5OyIwNTo0Nzo1NCAiOzI7MjQ4NQ=="/>
+        <attribute name="edited" value="QWRtaW47TEFCLTAxLTE1OzIwMjMtMTItMDY7IjAxOjUyOjQ2ICI7MjsyMjgz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="quantCasas, quantPessoas, nubCanal, for, quantPfinal, c3porcent, c5porcent, c8porcent, c11porcent, c13porcent" type="Integer" array="False" size=""/>
+            <assign variable="quantPfinal" expression="0"/>
+            <assign variable="c3porcent" expression="0"/>
+            <assign variable="c5porcent" expression="0"/>
+            <assign variable="c8porcent" expression="0"/>
+            <assign variable="c11porcent" expression="0"/>
+            <assign variable="c13porcent" expression="0"/>
+            <output expression="&quot;digite a quantidade de casas&quot;" newline="True"/>
+            <input variable="quantCasas"/>
+            <for variable="for" start="1" end="quantCasas" direction="inc" step="1">
+                <output expression="&quot;digite o canal que a casa &quot;&amp;for&amp;&quot; estava assistindo os canais s&#227;o 3,5,8,11,13&quot;" newline="True"/>
+                <input variable="nubCanal"/>
+                <output expression="&quot;digite a quantidade de pessoas que estavam assistindo&quot;" newline="True"/>
+                <input variable="quantPessoas"/>
+                <assign variable="quantPfinal" expression="quantPfinal+quantPessoas"/>
+                <if expression="nubCanal=3">
+                    <then>
+                        <assign variable="c3porcent" expression="c3porcent+quantPessoas"/>
+                    </then>
+                    <else>
+                        <if expression="nubCanal=5">
+                            <then>
+                                <assign variable="c5porcent" expression="c5porcent+quantPessoas"/>
+                            </then>
+                            <else>
+                                <if expression="nubCanal=8">
+                                    <then>
+                                        <assign variable="c8porcent" expression="c8porcent+quantPessoas"/>
+                                    </then>
+                                    <else>
+                                        <if expression="nubCanal=11">
+                                            <then>
+                                                <assign variable="c11porcent" expression="c11porcent+quantPessoas"/>
+                                            </then>
+                                            <else>
+                                                <assign variable="c13porcent" expression="c13porcent+quantPessoas"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+                <assign variable="nubCanal" expression="0"/>
+                <assign variable="quantPessoas" expression="0"/>
+            </for>
+            <assign variable="c3porcent" expression="(c3porcent/quantPfinal)*100"/>
+            <assign variable="c5porcent" expression="(c5porcent/quantPfinal)*100"/>
+            <assign variable="c8porcent" expression="(c8porcent/quantPfinal)*100"/>
+            <assign variable="c11porcent" expression="(c11porcent/quantPfinal)*100"/>
+            <assign variable="c13porcent" expression="(c13porcent/quantPfinal)*100"/>
+            <output expression="&quot;a porcentagem de audiencia do canal 3 &#233;&quot;&amp;c3porcent&amp;&quot;%&quot;" newline="True"/>
+            <output expression="&quot;a porcentagem de audiencia do canal 5 &#233;&quot;&amp;c5porcent&amp;&quot;%&quot;" newline="True"/>
+            <output expression="&quot;a porcentagem de audiencia do canal 8 &#233;&quot;&amp;c8porcent&amp;&quot;%&quot;" newline="True"/>
+            <output expression="&quot;a porcentagem de audiencia do canal 11 &#233;&quot;&amp;c11porcent&amp;&quot;%&quot;" newline="True"/>
+            <output expression="&quot;a porcentagem de audiencia do canal 13 &#233;&quot;&amp;c13porcent&amp;&quot;%&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

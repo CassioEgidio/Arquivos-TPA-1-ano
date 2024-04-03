@@ -1,0 +1,23 @@
+Ficha de desenvolvimento exercicio 7
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+   inteiro com o nome "qa", serve para saber quantos alunos existem na sala.
+   matriz com o nome "notass", serve para armazenar o valor das notas
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+    as mesmas que a de entrada
+    real com o nome "media", serve para calcular a media
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+   a varialvel "media"
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+   Primeiro o usuario vai entrar com quantos alunos tem na sala, depois uma estrutura de retição
+   que vai ir armazenando os valores das notas na matriz, em seguida esses valores vão ser somados 
+   e divididos por 2, e terá um if e else que separará os valores e apresentará que foi aprovado ou reprovado
+
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Não possui
+	 
+6) e o que apresentar como resultado final.
+     o resultado da media e se o aluno foi aprovado ou reprovado

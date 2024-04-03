@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 10:02:23 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDY7IjA5OjE4OjI1ICI7MjE3Nw=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDY7IjEwOjAyOjIzICI7MTI7MjMxOA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ntitulo, candidato, jose, joao" type="Integer" array="False" size=""/>
+            <assign variable="ntitulo" expression="1"/>
+            <assign variable="candidato" expression="0"/>
+            <assign variable="jose" expression="0"/>
+            <assign variable="joao" expression="0"/>
+            <while expression="ntitulo&gt;0">
+                <output expression="&quot;Informe o numero do seu t&#237;tulo&quot;" newline="True"/>
+                <input variable="ntitulo"/>
+                <if expression="ntitulo&gt;0">
+                    <then>
+                        <output expression="&quot;Digite o numero do seu condidato&quot;" newline="True"/>
+                        <input variable="candidato"/>
+                        <if expression="candidato=1">
+                            <then>
+                                <assign variable="jose" expression="jose+candidato"/>
+                            </then>
+                            <else>
+                                <assign variable="joao" expression="joao+candidato"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </while>
+            <output expression="&quot;O candidato jose teve &quot;&amp;jose&amp;&quot; votos&quot;" newline="True"/>
+            <output expression="&quot;O candidato jo&#227;o teve &quot;&amp;joao&amp;&quot; votos&quot;" newline="True"/>
+            <if expression="jose&gt;joao">
+                <then>
+                    <output expression="&quot;O vencedor foi o jose com &quot;&amp;jose&amp;&quot; votos&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;O vencedor foi o jo&#227;o com &quot;&amp;joao&amp;&quot; votos&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

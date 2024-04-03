@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Aluno"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-29 03:02:17 "/>
+        <attribute name="created" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAyOjQ3OjA2ICI7MjIwMQ=="/>
+        <attribute name="edited" value="QWx1bm87TEFCLTAxLTE0OzIwMjMtMDMtMjk7IjAzOjAyOjE3ICI7MTsyMzAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, m" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite a sua nota do primeiro bimestre&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Digita a sua nota do segundo bimestre&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Digite a sua nota da terceiro bimestre&quot;" newline="True"/>
+            <input variable="n3"/>
+            <output expression="&quot;Digita a sua nota do quarto bimestre&quot;" newline="True"/>
+            <input variable="n4"/>
+            <assign variable="m" expression="(n1+n2+n3+n4)/4"/>
+            <output expression="&quot;A sua media dos quatro bimestres &#233; de &quot;&amp;m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

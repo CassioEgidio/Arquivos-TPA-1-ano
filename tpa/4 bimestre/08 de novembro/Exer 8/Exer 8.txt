@@ -1,0 +1,19 @@
+Ficha de desenvolvimento exercicio 8
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     int com o nome "qa" serve para saber quantos animais existem na loja.
+	 vetor do tipo texto com o nome "tipoanimal", serve para armazenar os valores "gato" ou "cachorro".
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     as mesmas de estrada.
+	 int com o nome "c", serve para fazer a conta de quantos cachorros existem na loja.
+	 int com o nome "g", serve para fazer a conta de quantos gatos existem na loja.
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeiro o usuario entrará com a quantidade de animais que existem na loja, depois terá uma estrutura de repetição, que dentro tera a pergunta "Qual o tipo do animal (gato ou cachorro)" e o valor será armazenado em um vetor, e assim que o usuario digitar o tipo do animal tera um if que separará se o animal é gato ou cachorro, e a variavel "g" ou "c" somará mais um, agora se não for nenhum animal (gato ou cachorro) ou o usuario escrevel errado aparecerá na tela "Animal não identificado", e a pergunta será feita novamente (a estrutura voltará para o inicio e a variavel "i" não aumentará de valor)
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Nao possui
+	 
+6) e o que apresentar como resultado final.
+     o valor das duas variaveis "g" "c"

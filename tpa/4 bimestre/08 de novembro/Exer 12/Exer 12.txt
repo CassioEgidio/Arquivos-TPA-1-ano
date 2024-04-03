@@ -1,0 +1,20 @@
+quantas, quais (nome e tipo) serão as variáveis de entrada;
+R: 3, quantCasa tipo inteiro: serve para saber quantas casas tem, quantPessoas tipo inteiro: serve para saber quantas pessoas estavam assistindo o canal na casa, nubCanal tipo inteiro serve para saber qual canal estavam assistindo.
+
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+R:7, for tipo inteiro: serve para rodar o for, quantPfinal tipo inteiro: serve para saber quantas pessoas estavam tem no total,c3porcent tipo inteiro: serve para guardar a porcentagem de audiência, c5porcent tipo inteiro: serve para guardar a porcentagem de audiência, c8porcent tipo inteiro: serve para guardar a porcentagem de audiência, c11porcent tipo inteiro: serve para guardar a porcentagem de audiência, c13porcent tipo inteiro: serve para guardar a porcentagem de audiência.
+
+
+
+3) quantas, quais (nome e tipo) serão as variáveis de saída ;
+R: c3porcent tipo inteiro: serve para guardar a porcentagem de audiência, c5porcent tipo inteiro: serve para guardar a porcentagem de audiência, c8porcent tipo inteiro: serve para guardar a porcentagem de audiência, c11porcent tipo inteiro: serve para guardar a porcentagem de audiência, c13porcent tipo inteiro: serve para guardar a porcentagem de audiência.
+
+
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+R: declarar as variáveis, pedir para o usuário digitar a quantidade de casas, colocar um for para rodar até atingir o número de casas dentro dele perguntar qual canal e o número de pessoas atribuir o número de pessoas a variável quantPessoas e somar a quantPfinal colocar atribuir o número do canal a variável nubCanal colocar um if pra saber o número do canal dentro do if de cada canal somar com a variável do canal a quantPessoas, fora do for pegar a variável de cada canal e dividir pela variável quantPfinal e depois multiplicar por 100. 
+
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+R: não possui.
+
+6) e o que apresentar como resultado final.
+R: as variáveis dos canais.

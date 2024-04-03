@@ -1,0 +1,19 @@
+Ficha de desenvolvimento exercicio 4
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+      varialvel tipo texto com o nome "responda", serve para fazer a pergunta "O que é, o que é? Quanto mais se tira, mais a gente tem?"
+	  
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     é a mesma que a de entrada
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     Não possui
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeira sera feita a pergunta "O que é, o que é? Quanto mais se tira, mais a gente tem?", depois a resposta sera verificada em uma estrutura de repetição, que ficara rodando ate o valor da pergunta ser "fotografia", se o valor nao for "fotografia" ele fará a pergunta novamente ate a resposta for "fotografia"
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     serve para validar a pergunta, e o parametro enviado é a variavel "responda"
+	 
+6) e o que apresentar como resultado final.
+     Quando a resposta for "fotografia" aparecera escrito "Você"

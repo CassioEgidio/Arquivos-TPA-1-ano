@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-06 03:07:09 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjc7IjA4OjUwOjAyICI7MjE2OQ=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjc7IjA5OjEwOjQ0ICI7ODsyMjg3"/>
+        <attribute name="edited" value="QWRtaW47TEFCLTAxLTExOzIwMjMtMTItMDY7IjAzOjA3OjA5ICI7NzsyMjg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ola" type="String" array="False" size=""/>
+            <output expression="&quot;Ol&#225; tudo bem?&quot;" newline="True"/>
+            <input variable="ola"/>
+            <call expression="ol(ola)"/>
+            <output expression="&quot;Que bom&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="ol" type="None" variable="">
+        <parameters>
+            <parameter name="ola" type="String" array="False"/>
+        </parameters>
+        <body>
+            <while expression="ola != &quot;Sim&quot; &amp;&amp; ola != &quot;sim&quot;">
+                <output expression="&quot;Ol&#225; tudo bem?&quot;" newline="True"/>
+                <input variable="ola"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

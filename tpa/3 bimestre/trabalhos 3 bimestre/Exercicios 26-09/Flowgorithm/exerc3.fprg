@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gusta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 10:55:44 "/>
+        <attribute name="created" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjMzOjM3ICI7Mjc2MQ=="/>
+        <attribute name="edited" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjU1OjQ0ICI7MjsyODcy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="altura, peso" type="Real" array="False" size=""/>
+            <declare name="sex" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite sua altura em metros: (EX: 1.56 )&quot;" newline="True"/>
+            <input variable="altura"/>
+            <output expression="&quot;Digite seu sexo sendo 1 para homem e 2 para mulher: &quot;" newline="True"/>
+            <input variable="sex"/>
+            <assign variable="peso" expression="CalcularPesoIdeal(altura,sex)"/>
+            <output expression="&quot;Seu peso ideal &#233;: &quot;&amp;peso" newline="True"/>
+        </body>
+    </function>
+    <function name="CalcularPesoIdeal" type="Real" variable="pes">
+        <parameters>
+            <parameter name="alt" type="Real" array="False"/>
+            <parameter name="sexo" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="pes" type="Real" array="False" size=""/>
+            <if expression="sexo==1">
+                <then>
+                    <assign variable="pes" expression="(72.7*alt)-58"/>
+                </then>
+                <else>
+                    <if expression="sexo==2">
+                        <then>
+                            <assign variable="pes" expression="(62.1*alt)-44.7"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;N&#250;mero invalido.&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

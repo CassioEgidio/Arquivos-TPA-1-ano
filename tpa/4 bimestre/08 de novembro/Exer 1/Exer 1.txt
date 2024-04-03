@@ -1,0 +1,27 @@
+Ficha de desenvolvimento exercicio 1
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     vetor de tipo real de 20 numeros com o nome "num20"
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     int com o nome "i", serva para movimentar a estrutura de repetição
+     int com o nome "entre0100", serve para armazenar os numeros existem entre 0 e 100
+	 int com o nome "entre101200", serve para armazenar os numeros existem entre 101 e 200
+	 int com o nome "maior200", serve para armazenar os numeros que são maiores de 200
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     As variaveis de saida serão as mesmas que as variaveis de processamento
+     int com o nome "entre0100"
+	 int com o nome "entre101200"
+	 int com o nome "maior200"
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     1. em um vetor entrar com os vinte numeros.
+	 2. em uma estrutura de repetição, que ficara girando ate o valor alcançar 20, e nesse periodo com uma estrutura de IF e ELSE que vai ficar separando e somando um novo valor na variavel de processamento quando o numero for testado e aprovado em alguma das 3 opçoes.
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Não possui.
+	 
+6) e o que apresentar como resultado final.
+     Aparecera o resultado das 3 variaveis de processamento, e seus respectivos valores.
+	

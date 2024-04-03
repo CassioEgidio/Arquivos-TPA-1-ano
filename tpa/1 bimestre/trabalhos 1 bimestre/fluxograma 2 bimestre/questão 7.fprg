@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-03-29 07:51:26 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMDMtMjk7IjA3OjMzOjA4ICI7MjE3OA=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMDMtMjk7IjA3OjUxOjI2ICI7MTsyMjg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="pfv1, pld2, pi3, vcia4, vcld5, ptv6" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o pre&#231;o de fabrica do veiculo&quot;" newline="True"/>
+            <input variable="pfv1"/>
+            <output expression="&quot;Digite o percentual de lucro do distribuidor&quot;" newline="True"/>
+            <input variable="pld2"/>
+            <output expression="&quot;Digite o percentual de impostos aplicados&quot;" newline="True"/>
+            <input variable="pi3"/>
+            <assign variable="vcia4" expression="(pfv1*pi3)/100"/>
+            <assign variable="vcld5" expression="(pfv1*pld2)/100"/>
+            <assign variable="ptv6" expression="pfv1+vcia4+vcld5"/>
+            <output expression="&quot;O valor correspondente aos impostos &#233; &quot;&amp;vcia4" newline="True"/>
+            <output expression="&quot;O valor correspondente ao lucro do distribuidor &#233; &quot;&amp;vcld5" newline="True"/>
+            <output expression="&quot;O valor final do veiculo &#233; &quot;&amp;ptv6" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

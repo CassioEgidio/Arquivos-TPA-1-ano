@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-28 02:10:20 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjg7IjAxOjMyOjQxICI7MjE2Ng=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjg7IjAyOjEwOjIwICI7MjsyMjY5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vaconta, bebida, pesoprato" type="Real" array="False" size=""/>
+            <assign variable="vaconta" expression="0"/>
+            <assign variable="bebida" expression="0"/>
+            <assign variable="pesoprato" expression="0"/>
+            <output expression="&quot;Qual &#233; o peso do prato?&quot;" newline="True"/>
+            <input variable="pesoprato"/>
+            <output expression="&quot;Qual &#233; o valor gasto com a bebida?&quot;" newline="True"/>
+            <input variable="bebida"/>
+            <if expression="bebida=0 &amp;&amp; pesoprato=0">
+                <then>
+                    <output expression="&quot;Programa encerredo&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="vaconta" expression="bebida+(pesoprato*20)"/>
+                    <output expression="&quot;O valor gasto foi &quot;&amp;vaconta" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

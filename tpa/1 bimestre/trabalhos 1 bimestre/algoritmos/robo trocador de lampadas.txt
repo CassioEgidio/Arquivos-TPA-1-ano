@@ -1,0 +1,42 @@
+1 passo:deslocar-se para <escada> 
+2 passo:pegar <escada>
+3 passo:mover <escada> para <bocal>
+4 passo: soltar <escada>
+5 passo:deslocar-se ate <caixa A>
+  6 passo: existem lampadas na caixa A?
+      6.1:se sim passar para o passo 7
+      6.2:se nao passar para o passo 35
+7 passo:pegar <lampada> da caixa A 
+8 passo:deslocar-se ate base da escada
+9 passo:deslocar-se ate o topo da escada 
+10 passo:mover <lampada> ate <bocal>
+11 passo:girar garras 180º no sentido horario 
+12 passo:soltar <lampada>
+13 passo:deslocar-se ate a base da escada 
+14 passo:deslocar-se para <interruptor>
+15 passo:precionar o interruptor (para ligar)
+  16 passo:a lampada acende?
+       16.1:se sim passar para o passo 17
+	   16.2:se nao passar para o passo 26
+17 passo:pressionar interruptor (para desligar) 
+18 passo:deslocar-se ate base da escada
+19 passo:deslocar-se ate o topo da escada 
+20 passo:pegar <lampada>
+21 passo:girar garras 180º no sentido anti horario
+22 passo:deslocar-se ate a base da escada
+23 passo:deslocar-se ate <caixa B>
+24 passo:mover <lampada> para <caixa B>
+ 25 passo:repetir passo 5
+26 passo:pressionar interruptor (para desligar)
+27 passo:deslocar-se ate base da escada
+28 passo:deslocar-se ate o topo da escada 
+29 passo:pagar <lampada>
+30 passo:girar garras 180º no sentido anti horario
+31 passo:deslocar-se ate a basa da escada
+32 passo:deslocar-se ate <lixo>
+33 passo:mover <lampada> para <lixo>
+ 34 passo:repetir passo 5
+35 passo:deslocar-se ate <escada> 
+36 passo:pegar <escada>
+37 passo:mover <escada> para <canto inferior direito>
+

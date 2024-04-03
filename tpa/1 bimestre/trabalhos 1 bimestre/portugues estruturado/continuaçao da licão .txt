@@ -1,0 +1,46 @@
+questão 5 
+
+inicio 
+     real: n1, n2, n3, n4, s;
+	 escreva("digite o primeiro numero");
+	 leia(n1);
+	 escreva("digite o segundo numero");
+	 leia(n2);
+	 escreva(digite o terceiro numero");
+	 leia(n3);
+	 escreva("digite o quarto numero");
+	 leia(n4);
+	 s<-n1+n2+n3+n4;
+	 escreva("a soma dos quatros numeros é",s);
+fim.
+
+
+questão 6 
+
+inicio
+     real: sa, va, ns, pa;
+	 escreva("digite o seu salario atual");
+	 leia(sa);
+	 escreva("digite o percentual de aumento do seu salario");
+	 leia(pa);
+	 va<-(sa*pa)/100;
+	 ns<-sa+va;
+	 escreva("o valor do aumento de seu salario é",va,"seu nova salario é",ns);
+fim.
+
+
+questão 7
+
+inicio
+     real: pfv, vci, vcld, ptv, pld, pi;
+	 escreva("digite o preço de fabrica do veículo");
+	 leia(pfv);
+	 escreva("digite o percentual de lucro do ditribuidor");
+	 leia(pld);
+	 escreva("digite o percentual de impostos");
+	 leia(pi);
+	 vci<-(pfv*pi)/100;
+	 vcld<-(pfv*pld)/100;
+	 ptv<-pfv+vci+vcld;
+	 escreva("o valor correspondente aos impostos é",vci,"o valor correspondente ao lucro do distribuidor é",vcld,"o preço total do veiculo é",ptv);
+fim.

@@ -1,0 +1,19 @@
+Ficha de desenvolvimento exercicio 3
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     varialvel tipo texto com o nome "ola", serve para fazer a pergunta se esta tudo bem
+
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     é a mesma que a de entrada
+
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     Não possui
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeira sera feita a pergunta "Ola tudo bem", depois a resposta sera verificada em uma estrutura de repetição, que ficará em um subprograma, que ficara rodando ate o valor da pergunta ser "Sim", se o valor nao for "Sim" ele fará a pergunta novamente ate a resposta for "Sim"
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     serve para validar a pergunta "olá tudo bem?" e o parametro enviado é a variavel "ola"
+	 
+6) e o que apresentar como resultado final.
+     Quando a resposta for "Sim" aparecera escrito "Que bom"

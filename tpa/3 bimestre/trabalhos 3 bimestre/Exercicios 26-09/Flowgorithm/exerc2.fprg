@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="gusta"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-10-23 10:32:53 "/>
+        <attribute name="created" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjIxOjA0ICI7Mjc1Mg=="/>
+        <attribute name="edited" value="Z3VzdGE7REVTS1RPUC1KMEkyQkVBOzIwMjMtMTAtMjM7IjEwOjMyOjUzICI7MTsyODY2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite o primeiro n&#250;mero: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <output expression="&quot;Digite o segundo n&#250;mero: &quot;" newline="True"/>
+            <input variable="num2"/>
+            <call expression="diferenca(num1,num2)"/>
+        </body>
+    </function>
+    <function name="diferenca" type="None" variable="">
+        <parameters>
+            <parameter name="n1" type="Real" array="False"/>
+            <parameter name="n2" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Resul" type="Real" array="False" size=""/>
+            <if expression="n1&gt;n2">
+                <then>
+                    <assign variable="Resul" expression="n1-n2"/>
+                </then>
+                <else>
+                    <assign variable="Resul" expression="n2-n1"/>
+                </else>
+            </if>
+            <output expression="&quot;A diferen&#231;a dos n&#250;meros &quot;&amp;n1&amp;&quot; e &quot;&amp;n2&amp;&quot; &#233; de: &quot; &amp;Resul" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

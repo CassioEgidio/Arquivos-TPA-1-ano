@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cassi"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-12-02 04:27:45 "/>
+        <attribute name="created" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjc7IjA4OjE5OjA3ICI7MjE3OQ=="/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTEtMjc7IjA4OjQxOjA5ICI7MTtjYXNzaTtDQVNTSU87MjAyMy0xMS0xNDsiMDk6MDA6MDggIjtFeGVyIDEuZnByZzs1NTMx"/>
+        <attribute name="edited" value="Y2Fzc2k7Q0FTU0lPOzIwMjMtMTItMDI7IjA0OjI3OjQ1ICI7MjA7MjMyNw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="qn" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="soma" type="Real" array="False" size=""/>
+            <assign variable="qn" expression="0"/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="i" expression="0"/>
+            <output expression="&quot;quantos numeros voc&#234; quer somar?&quot;" newline="True"/>
+            <input variable="qn"/>
+            <declare name="numeros" type="Real" array="True" size="qn"/>
+            <while expression="i&lt;qn">
+                <output expression="&quot;entre com um numero&quot;" newline="True"/>
+                <input variable="numeros[i]"/>
+                <if expression="numeros[i]&gt;=0">
+                    <then>
+                        <assign variable="soma" expression="soma+numeros[i]"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Programa encerrado&quot;" newline="True"/>
+                        <breakpoint/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;A soma dos numeros &#233; &quot;&amp;soma" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

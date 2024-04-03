@@ -1,0 +1,58 @@
+questão 1 
+
+inicio
+     inteiro: anp, aa, i2050, ia;
+	 escreva("digite o seu ano de nascimento");
+	 leia(anp);
+	 escreva("digite o ano atual");
+	 leia(aa);
+	 ia<-aa-anp;
+	 l2050<-2050-anp;
+	 escreva("sua idade atual é",ia,"sua idade em 2050 é",l2050);
+fim.
+
+
+quetão 2 
+
+inicio 
+     real: n, x, r;
+	 escreva("digite um numero");
+	 leia(n);
+	 escreva("digite um numero");
+	 leia(x);
+	 r<-(n*x)**2;
+	 escreva("seu resultado é",r);
+fim.
+
+
+questão 3
+
+inicio
+     real: bs, al, r;
+	 escreva("digite a base do triangulo");
+	 leia(bs);
+	 escreva("digite a altura do triangulo");
+	 leia(al);
+	 r<-(bs*al)/2;
+	 escreva("seu resultado é",r);
+fim.
+
+
+questão 4 
+
+inicio
+     caractere: na;
+	 real:n1, n2, n3, n4, m;
+	 escreva("digite o seu nome");
+	 leia(na);
+	 escreva("digite a sua nota do primeiro bimestre");
+	 leia(n1);
+	 escreva("digite a sua nota do segundo bimestre");
+	 leia(n2);
+	 escreva("digite a sua nota do terceiro bimestre");
+	 leia(n3);
+	 escreva("digite a sua nota do quarto bimestre");
+	 leia(n4);
+	 m<-(n1+n2+n3+n4)/4;
+	 escreva("o aluno",na,"tem a media de",m);
+	 

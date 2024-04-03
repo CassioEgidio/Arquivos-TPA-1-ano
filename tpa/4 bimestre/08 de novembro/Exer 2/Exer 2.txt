@@ -1,0 +1,22 @@
+Ficha de desenvolvimento exercicio 2
+
+1) quantas, quais (nome e tipo) serão as variáveis de entrada;
+     int com o nome "qn", que serve para saber quantos numeros o usuario quer somar
+	 
+2) quantas, quais (nome e tipo) serão as variáveis de processamento;
+     "qn" alimenta a estruturade repetição
+	 "i", controla a estrutura de repetição
+	 real com o nome "soma", que serva para fazer a soma dos numeros
+	 
+3) quantas, quais (nome e tipo) serão as variáveis de saída;
+     a variavel de saida será a "soma"
+	 
+4) qual processamento que deverá ser feito, apresentando (por escrito) a lógica utilizada para a resolução do problema;
+     Primeiro o usuario entrará com quantos numeros ele quer somar, depois essa variavel entrará em uma estrutura de repetição, lá terá um if e um else que separará se o numero é negativo ou positivo, se for negativo o programa será encerrado e ser for positivo ele será somado.
+	 
+5) descrição dos métodos, apresentando caso haja "parâmetros" e "retorno", sua finalidade e sua lógica;
+     Não possui.
+	 
+6) e o que apresentar como resultado final.
+     Aparecerá o resultado da varialvel "soma"
+	 
